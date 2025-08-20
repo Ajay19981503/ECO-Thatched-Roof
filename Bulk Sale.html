@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Bamboo Materials | GreenBamboo Homes - Wholesale Supplier</title>
+    <meta name="description" content="Premium quality bamboo materials at wholesale prices. Ideal for contractors, builders, and large-scale sustainable construction projects.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --primary-dark: #1b5e20;
+            --primary-light: #4caf50;
+            --secondary: #f9a825;
+            --light: #f5f5f5;
+            --dark: #333;
+            --gray: #777;
+            --light-gray: #e0e0e0;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-hover: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .btn-secondary {
+            background: var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background: #f57f17;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--primary-dark);
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary);
+            margin: 15px auto 0;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Header & Navigation - Same as Homepage */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            font-size: 24px;
+            color: var(--primary-dark);
+            margin: 0;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-item {
+            position: relative;
+            margin: 0 10px;
+        }
+        
+        .nav-link {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            transition: var(--transition);
+            display: block;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary);
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 220px;
+            box-shadow: var(--shadow-hover);
+            border-radius: 4px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+            z-index: 100;
+            list-style: none;
+        }
+        
+        .dropdown-menu li {
+            padding: 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+        
+        .dropdown-menu a {
+            padding: 12px 20px;
+            display: block;
+            color: var(--dark);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+        
+        .dropdown-menu a:hover {
+            background: var(--primary-light);
+            color: white;
+            padding-left: 25px;
+        }
+        
+        .nav-item:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        
+        .hamburger .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: var(--dark);
+            transition: var(--transition);
+        }
+        
+        /* Bulk Hero Section */
+        .bulk-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/2b/95/38/2b9538c94eea37ae0261a6d30d69ec9f.jpg') no-repeat center center/cover;
+            height: 70vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            margin-top: 80px;
+        }
+        
+        .bulk-hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .bulk-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .bulk-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        
+        .bulk-badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--dark);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        /* Products Section */
+        .products {
+            background: white;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .product-image {
+            height: 250px;
+            overflow: hidden;
+            background: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            max-height: 100%;
+            transition: transform 0.5s ease;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+        
+        .product-content {
+            padding: 25px;
+        }
+        
+        .product-content h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: var(--primary-dark);
+        }
+        
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 15px;
+        }
+        
+        .product-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .product-price span {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--gray);
+        }
+        
+        .product-min {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        
+        .product-specs {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .product-specs li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .product-specs i {
+            color: var(--primary);
+            margin-right: 10px;
+            width: 20px;
+        }
+        
+        /* Benefits Section */
+        .bulk-benefits {
+            background: linear-gradient(to bottom, #f5f9f5, #e8f5e9);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            background: white;
+            border-radius: 8px;
+            padding: 40px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .benefit-icon {
+            font-size: 48px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .benefit-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+        }
+        
+        /* How It Works */
+        .process {
+            background: white;
+        }
+        
+        .process-steps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step-content {
+            background: white;
+            border-radius: 8px;
+            padding: 30px 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .step h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(to bottom, #e8f5e9, #f5f9f5);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 30px;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 80px;
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            color: var(--primary-light);
+            opacity: 0.3;
+            font-family: serif;
+        }
+        
+        .testimonial-text {
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            background: var(--light-gray);
+        }
+        
+        .author-info h4 {
+            margin: 0;
+            color: var(--dark);
+        }
+        
+        .author-info p {
+            color: var(--gray);
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid var(--light-gray);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background: var(--light);
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question i {
+            transition: var(--transition);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 1000px;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(46, 125, 50, 0.9)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer - Same as Homepage */
+        footer {
+            background: var(--primary-dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--secondary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .contact-info {
+            list-style: none;
+        }
+        
+        .contact-info li {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: var(--secondary);
+            margin-top: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            color: #aaa;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 992px) {
+            .hamburger {
+                display: block;
+            }
+            
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                gap: 0;
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                transition: var(--transition);
+                box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+                padding: 20px 0;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-item {
+                margin: 15px 0;
+            }
+            
+            .dropdown-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                display: none;
+                box-shadow: none;
+                width: 100%;
+                margin-top: 10px;
+                transform: none;
+            }
+            
+            .nav-item:hover .dropdown-menu {
+                display: none;
+            }
+            
+            .dropdown-menu.active {
+                display: block;
+            }
+            
+            .bulk-hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .bulk-hero {
+                min-height: 500px;
+            }
+            
+            .bulk-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation - Same as Homepage -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="logo.png" alt="GreenBamboo Homes">
+                    <h1>Dilip Bhai <span>Thatched Roof</span> Dilip Sahni ♻️</h1>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="About Us.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link active">Services <i class="fas fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Bulk Sale.html" class="active"><i class="fas fa-boxes"></i> Bulk Sale</a></li>
+                            <li><a href="/Labour Service.html"><i class="fas fa-digging"></i> Labour Service</a></li>
+                            <li><a href="/Retailr.html"><i class="fas fa-store"></i> Retailer</a></li>
+                             <li><a href="/Product page.html"><i class="fa-brands fa-product-hunt"></i> Product</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="Blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bulk Hero Section -->
+    <section class="bulk-hero">
+        <div class="container">
+            <div class="bulk-hero-content">
+                <div class="bulk-badge">Wholesale Prices • Minimum Order: 100 Units</div>
+                <h1>Premium Bamboo Materials in Bulk</h1>
+                <p>Source sustainable bamboo construction materials at wholesale prices for your large-scale projects. Quality assured with volume discounts.</p>
+                <a href="#products" class="btn btn-secondary">View Products</a>
+                <a href="#contact" class="btn btn-outline" style="margin-left: 15px;">Request Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Bulk Bamboo Products</h2>
+                <p>Premium quality materials for large-scale sustainable construction</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1593692909680-2d3e4ccf0b4f?ixlib=rb-4.0.3" alt="Bamboo Poles">
+                    </div>
+                    <div class="product-content">
+                        <h3>Structural Bamboo Poles</h3>
+                        <div class="product-meta">
+                            <div class="product-price">₹150 <span>per pole</span></div>
+                            <div class="product-min">Min: 500 units</div>
+                        </div>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-ruler"></i> Diameter: 3-5 inches</li>
+                            <li><i class="fas fa-ruler-combined"></i> Length: 3-6 meters</li>
+                            <li><i class="fas fa-leaf"></i> Species: Guadua Angustifolia</li>
+                            <li><i class="fas fa-shield-alt"></i> Treated for durability</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">Request Sample</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556911220-ef412ae179a9?ixlib=rb-4.0.3" alt="Bamboo Panels">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bamboo Wall Panels</h3>
+                        <div class="product-meta">
+                            <div class="product-price">₹850 <span>per sq.m</span></div>
+                            <div class="product-min">Min: 200 sq.m</div>
+                        </div>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-ruler"></i> Size: 1m x 2.5m panels</li>
+                            <li><i class="fas fa-layer-group"></i> Thickness: 12mm</li>
+                            <li><i class="fas fa-paint-roller"></i> Finish: Natural or Carbonized</li>
+                            <li><i class="fas fa-tint"></i> Water-resistant coating</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">Request Sample</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3" alt="Bamboo Flooring">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bamboo Flooring Planks</h3>
+                        <div class="product-meta">
+                            <div class="product-price">₹1,200 <span>per sq.m</span></div>
+                            <div class="product-min">Min: 300 sq.m</div>
+                        </div>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-ruler"></i> Dimensions: 90x900x15mm</li>
+                            <li><i class="fas fa-burn"></i> Engineered for high traffic</li>
+                            <li><i class="fas fa-swatchbook"></i> Finishes: Natural, Coffee, Ebony</li>
+                            <li><i class="fas fa-shield-alt"></i> 25-year warranty</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">Request Sample</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3" alt="Thatching Material">
+                    </div>
+                    <div class="product-content">
+                        <h3>Premium Thatching Material</h3>
+                        <div class="product-meta">
+                            <div class="product-price">₹75 <span>per bundle</span></div>
+                            <div class="product-min">Min: 1,000 bundles</div>
+                        </div>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-ruler"></i> Bundle size: 1m diameter</li>
+                            <li><i class="fas fa-leaf"></i> Material: Nipa Palm or Coconut</li>
+                            <li><i class="fas fa-sun"></i> UV and weather resistant</li>
+                            <li><i class="fas fa-fire"></i> Fire-retardant treatment</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">Request Sample</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3" alt="Bamboo Beams">
+                    </div>
+                    <div class="product-content">
+                        <h3>Laminated Bamboo Beams</h3>
+                        <div class="product-meta">
+                            <div class="product-price">₹2,500 <span>per meter</span></div>
+                            <div class="product-min">Min: 100 meters</div>
+                        </div>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-ruler"></i> Dimensions: 100x100mm to 200x200mm</li>
+                            <li><i class="fas fa-weight-hanging"></i> Strength comparable to steel</li>
+                            <li><i class="fas fa-tree"></i> Sustainable alternative to timber</li>
+                            <li><i class="fas fa-certificate"></i> Structural grade certification</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">Request Sample</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1593692909680-2d3e4ccf0b4f?ixlib=rb-4.0.3" alt="Bamboo Joints">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bamboo Connection Systems</h3>
+                        <div class="product-meta">
+                            <div class="product-price">₹350 <span>per unit</span></div>
+                            <div class="product-min">Min: 500 units</div>
+                        </div>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-puzzle-piece"></i> Various connector types</li>
+                            <li><i class="fas fa-bolt"></i> Stainless steel construction</li>
+                            <li><i class="fas fa-toolbox"></i> Easy installation system</li>
+                            <li><i class="fas fa-shield-alt"></i> Corrosion resistant</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">Request Sample</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="bulk-benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benefits of Buying in Bulk</h2>
+                <p>Why large-scale buyers choose us for their bamboo supply</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Significant Cost Savings</h3>
+                    <p>Volume discounts up to 40% compared to retail prices, with additional savings on large orders.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3>Direct Factory Shipping</h3>
+                    <p>Eliminate middlemen with direct shipments from our processing facilities to your site.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Consistent Quality</h3>
+                    <p>Uniform quality across all materials with strict quality control for large orders.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Priority Scheduling</h3>
+                    <p>Bulk orders receive production priority and guaranteed delivery timelines.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <h3>Dedicated Account Manager</h3>
+                    <p>Personalized service with a single point of contact for all your bulk orders.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainable Supply Chain</h3>
+                    <p>Ethically sourced bamboo from certified sustainable plantations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Bulk Order Process</h2>
+                <p>Simple steps to get bamboo materials for your large projects</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Request Quote</h3>
+                        <p>Submit your project requirements and material specifications.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Receive Proposal</h3>
+                        <p>We'll prepare a customized quote with volume discounts.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Place Order</h3>
+                        <p>Confirm your order with a 30% advance payment.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Production</h3>
+                        <p>We process and prepare your materials with quality checks.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Delivery</h3>
+                        <p>Materials shipped directly to your site anywhere in India.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Project Support</h3>
+                        <p>Technical assistance during your construction process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Bulk Buyer Testimonials</h2>
+                <p>What large-scale clients say about our bamboo materials</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"We ordered 10,000 bamboo poles for our eco-resort project. The quality was consistent across all poles, and the bulk pricing helped us stay 15% under budget. Delivery was on schedule despite our remote location."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Arun Mehta</h4>
+                            <p>Project Manager, EcoResorts India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"As a construction contractor specializing in sustainable buildings, we source all our bamboo from GreenBamboo. Their bulk pricing and reliable supply chain have been crucial for completing projects on time and within budget."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Owner, GreenConstruct Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"The laminated bamboo beams we ordered for our commercial project exceeded expectations. The technical support team helped us with load calculations, and the materials arrived perfectly packed and ready for installation."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Rajiv Kapoor</h4>
+                            <p>Architect, Sustainable Designs Co.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Bulk Order FAQs</h2>
+                <p>Common questions about our bulk bamboo materials</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is the minimum order quantity for bulk purchases? 
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our minimum order quantity varies by product. For bamboo poles, the minimum is 500 units. For paneling and flooring, the minimum is 200 square meters. Please contact us for specific MOQs for other products.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you offer international shipping for bulk orders?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we regularly ship bulk orders internationally. We handle all export documentation and can arrange both sea and air freight. Shipping costs will be calculated based on your location and order volume.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I get custom sizes for bulk orders?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We specialize in custom sizing for bulk orders. Our production facilities can create bamboo materials to your exact specifications. Minimum order quantities may apply for custom sizes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What certifications do your bamboo products have?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our bamboo materials are certified by the Forest Stewardship Council (FSC), ISO 9001 for quality management, and meet international building code standards. We also provide additional certifications upon request.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does production take for bulk orders?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard bulk orders ship within 15-30 days after order confirmation. For very large orders (over 10,000 units) or custom products, production may take 45-60 days. We provide a detailed timeline with your quote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Order Bamboo in Bulk?</h2>
+            <p>Contact our bulk sales team for custom quotes and volume discounts</p>
+            <a href="#" class="btn btn-secondary">Request Quote</a>
+            <a href="#" class="btn btn-outline" style="margin-left: 15px;">Call: +91 98765 43210</a>
+        </div>
+    </section>
+
+    <!-- Footer - Same as Homepage -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>GreenBamboo Homes</h3>
+                    <p style="margin-bottom: 20px;">Building sustainable futures with eco-friendly bamboo construction since 2010.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1LKbW2ewzs/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/dilip-sahani"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/sahani_dil35695"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Us.html">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Bulk Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Bamboo Poles</a></li>
+                        <li><a href="#">Wall Panels</a></li>
+                        <li><a href="#">Flooring Planks</a></li>
+                        <li><a href="#">Thatching Material</a></li>
+                        <li><a href="#">Laminated Beams</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Bamboo Grove, Eco Park, Kerala, India</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> bulk@greenbamboo.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 8AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 GreenBamboo Homes. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #f44336;"></i> for a sustainable future</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // Mobile dropdown toggle
+        document.querySelectorAll('.has-dropdown').forEach(item => {
+            item.addEventListener('click', function(e) {
+                if (window.innerWidth < 992) {
+                    e.preventDefault();
+                    const dropdown = this.querySelector('.dropdown-menu');
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+        
+        // Sticky header effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 100);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

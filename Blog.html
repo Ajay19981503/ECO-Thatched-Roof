@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | GreenBamboo Homes - Sustainable Construction</title>
-    <meta name="description" content="Learn about our journey in sustainable bamboo construction. Discover our mission, values, and team dedicated to eco-friendly building solutions.">
+    <title>GreenBamboo Homes Blog | Sustainable Building Insights</title>
+    <meta name="description" content="Explore the latest in bamboo construction, sustainable design, and eco-friendly building practices with GreenBamboo Homes.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
     <style>
@@ -243,242 +243,322 @@
             transition: var(--transition);
         }
         
-        /* About Hero Section */
-        .about-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/8b/d2/33/8bd233958aa32a7434557b7ec9e96bfd.jpg') no-repeat center center/cover;
-            height: 70vh;
-            min-height: 600px;
+        /* Blog Hero Section */
+        .blog-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3') no-repeat center center/cover;
+            height: 60vh;
+            min-height: 500px;
             display: flex;
             align-items: center;
             color: white;
+            text-align: center;
             position: relative;
             margin-top: 80px;
         }
         
-        .about-hero-content {
+        .blog-hero-content {
             max-width: 800px;
+            margin: 0 auto;
             padding: 0 20px;
         }
         
-        .about-hero h1 {
+        .blog-hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         
-        .about-hero p {
+        .blog-hero p {
             font-size: 1.2rem;
             margin-bottom: 30px;
-            max-width: 600px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
-        /* Story Section */
-        .story {
-            background: white;
-        }
-        
-        .story-container {
+        /* Blog Content */
+        .blog-container {
             display: flex;
-            align-items: center;
-            gap: 50px;
+            gap: 40px;
+            margin-top: 40px;
         }
         
-        .story-image {
-            flex: 1;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow-hover);
+        .blog-posts {
+            flex: 3;
         }
         
-        .story-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-        
-        .story-image:hover img {
-            transform: scale(1.05);
-        }
-        
-        .story-content {
+        .sidebar {
             flex: 1;
         }
         
-        .story-content h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: var(--primary-dark);
-        }
-        
-        .story-content p {
-            margin-bottom: 20px;
-            color: var(--gray);
-        }
-        
-        /* Mission Section */
-        .mission {
-            background: linear-gradient(to bottom, #f5f9f5, #e8f5e9);
-        }
-        
-        .mission-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .mission-card {
-            background: white;
-            border-radius: 8px;
-            padding: 40px 30px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            text-align: center;
-        }
-        
-        .mission-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-        }
-        
-        .mission-icon {
-            font-size: 48px;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
-        
-        .mission-card h3 {
-            font-size: 22px;
-            margin-bottom: 15px;
-            color: var(--primary-dark);
-        }
-        
-        /* Team Section */
-        .team {
-            background: white;
-        }
-        
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .team-member {
+        .blog-post {
             background: white;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: var(--shadow);
             transition: var(--transition);
-            text-align: center;
+            margin-bottom: 40px;
         }
         
-        .team-member:hover {
-            transform: translateY(-10px);
+        .blog-post:hover {
+            transform: translateY(-5px);
             box-shadow: var(--shadow-hover);
         }
         
-        .member-image {
-            height: 250px;
+        .post-image {
+            height: 300px;
             overflow: hidden;
         }
         
-        .member-image img {
+        .post-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .team-member:hover .member-image img {
-            transform: scale(1.1);
+        .blog-post:hover .post-image img {
+            transform: scale(1.05);
         }
         
-        .member-info {
-            padding: 25px 20px;
+        .post-content {
+            padding: 30px;
         }
         
-        .member-info h3 {
-            font-size: 20px;
-            margin-bottom: 5px;
+        .post-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: var(--gray);
+            font-size: 14px;
+        }
+        
+        .post-meta i {
+            margin-right: 5px;
+            color: var(--primary);
+        }
+        
+        .post-meta span {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .post-content h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
             color: var(--primary-dark);
         }
         
-        .member-info p {
-            color: var(--secondary);
-            margin-bottom: 15px;
+        .post-content p {
+            margin-bottom: 20px;
+            color: var(--gray);
         }
         
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .social-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: var(--light);
+        .read-more {
             color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .read-more i {
+            margin-left: 5px;
             transition: var(--transition);
         }
         
-        .social-icons a:hover {
+        .read-more:hover i {
+            transform: translateX(5px);
+        }
+        
+        /* Sidebar */
+        .sidebar-widget {
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .sidebar-title {
+            font-size: 20px;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-gray);
+        }
+        
+        .categories-list {
+            list-style: none;
+        }
+        
+        .categories-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .categories-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .categories-list a {
+            color: var(--dark);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .categories-list a:hover {
+            color: var(--primary);
+        }
+        
+        .categories-list a span {
+            background: var(--light);
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        
+        .recent-post {
+            display: flex;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .recent-post:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .recent-post-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .recent-post-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .recent-post-content h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .recent-post-content h4 a {
+            color: var(--dark);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .recent-post-content h4 a:hover {
+            color: var(--primary);
+        }
+        
+        .recent-post-content .post-date {
+            color: var(--gray);
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .recent-post-content .post-date i {
+            margin-right: 5px;
+            color: var(--primary);
+            font-size: 12px;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tag {
+            background: var(--light);
+            color: var(--dark);
+            padding: 6px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .tag:hover {
             background: var(--primary);
             color: white;
-            transform: translateY(-3px);
         }
         
-        /* Stats Section */
-        .stats {
-            background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(46, 125, 50, 0.9)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3') no-repeat center center/cover;
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .page-item {
+            margin: 0 5px;
+        }
+        
+        .page-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--light);
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .page-link:hover, .page-link.active {
+            background: var(--primary);
             color: white;
-            text-align: center;
-            padding: 100px 0;
         }
         
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-        }
-        
-        .stat-item {
-            padding: 20px;
-        }
-        
-        .stat-number {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: var(--secondary);
-        }
-        
-        .stat-text {
-            font-size: 18px;
-        }
-        
-        /* CTA Section */
-        .cta {
-            background: white;
+        /* Newsletter */
+        .newsletter {
+            background: rgba(46, 125, 50, 0.05);
+            border: 1px solid rgba(46, 125, 50, 0.1);
+            border-radius: 8px;
+            padding: 25px;
             text-align: center;
         }
         
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+        .newsletter h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
             color: var(--primary-dark);
         }
         
-        .cta p {
-            max-width: 700px;
-            margin: 0 auto 30px;
-            font-size: 1.1rem;
+        .newsletter p {
             color: var(--gray);
+            margin-bottom: 20px;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid var(--light-gray);
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
         }
         
         /* Footer - Same as Homepage */
@@ -637,11 +717,15 @@
                 display: block;
             }
             
-            .about-hero h1 {
+            .blog-hero h1 {
                 font-size: 2.5rem;
             }
             
-            .story-container {
+            .blog-container {
+                flex-direction: column;
+            }
+            
+            .newsletter-form {
                 flex-direction: column;
             }
         }
@@ -655,16 +739,16 @@
                 font-size: 28px;
             }
             
-            .about-hero {
-                min-height: 500px;
+            .blog-hero {
+                min-height: 400px;
             }
             
-            .about-hero h1 {
+            .blog-hero h1 {
                 font-size: 2rem;
             }
             
-            .stat-number {
-                font-size: 36px;
+            .post-image {
+                height: 200px;
             }
         }
     </style>
@@ -681,18 +765,18 @@
                 
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="About Us.html" class="nav-link active">About Us</a></li>
+                    <li class="nav-item"><a href="About Us.html" class="nav-link">About Us</a></li>
                     <li class="nav-item has-dropdown">
                         <a href="#" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="/Bulk Sale.html"><i class="fas fa-boxes"></i> Bulk Sale</a></li>
                             <li><a href="/Labour Service.html"><i class="fas fa-digging"></i> Labour Service</a></li>
                             <li><a href="/Retailr.html"><i class="fas fa-store"></i> Retailer</a></li>
-                            <li><a href="/Product page.html"><i class="fa-brands fa-product-hunt"></i> Product</a></li>
+                             <li><a href="/Product page.html"><i class="fa-brands fa-product-hunt"></i> Product</a></li>
 
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="Blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="Blog.html" class="nav-link active">Blog</a></li>
                     <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 
@@ -705,186 +789,187 @@
         </div>
     </header>
 
-    <!-- About Hero Section -->
-    <section class="about-hero">
-        <div class="container">
-            <div class="about-hero-content">
-                <h1>Our Journey in Sustainable Construction</h1>
-                <p>For over a decade, we've been pioneering eco-friendly bamboo construction solutions that harmonize with nature while meeting modern living standards.</p>
-                <a href="#story" class="btn btn-secondary">Discover Our Story</a>
-            </div>
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="blog-hero-content">
+            <h1>GreenBamboo Insights</h1>
+            <p>Discover the latest trends, techniques, and innovations in sustainable bamboo construction</p>
+            <a href="#blog-posts" class="btn btn-secondary">Explore Articles</a>
         </div>
     </section>
 
-    <!-- Story Section -->
-    <section id="story" class="story">
+    <!-- Blog Content -->
+    <section id="blog-posts">
         <div class="container">
-            <div class="story-container">
-                <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1556911220-ef412ae179a9?ixlib=rb-4.0.3" alt="Dilip Sahni with bamboo">
-                </div>
-                <div class="story-content">
-                    <h2>Our Humble Beginnings</h2>
-                    <p>Founded in 2010 by Dilip Sahni, GreenBamboo Homes started as a small workshop with a big vision. Growing up in a rural village surrounded by bamboo groves, Dilip witnessed firsthand the incredible potential of this renewable resource. Frustrated by the environmental impact of conventional construction, he set out to create sustainable alternatives.</p>
-                    <p>Our journey began with a single bamboo hut and a commitment to eco-friendly practices. What started as a passion project has grown into an innovative company with projects spanning across three countries and a team of dedicated bamboo specialists.</p>
-                    <p>Today, we blend traditional craftsmanship with modern engineering to create structures that are not only beautiful but also environmentally responsible. Each project we undertake reflects our core values of sustainability, quality, and innovation.</p>
-                    <a href="#" class="btn">Meet Our Team</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section class="mission">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Mission & Values</h2>
-                <p>Driving sustainable change through innovative bamboo construction</p>
-            </div>
-            
-            <div class="mission-grid">
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-leaf"></i>
+            <div class="blog-container">
+                <div class="blog-posts">
+                    <div class="blog-post">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1556911220-ef412ae179a9?ixlib=rb-4.0.3" alt="Modern Bamboo House">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                                <span><i class="far fa-user"></i> Dilip Sahni</span>
+                                <span><i class="far fa-folder"></i> Construction</span>
+                            </div>
+                            <h3>Building Earthquake-Resistant Bamboo Structures</h3>
+                            <p>Bamboo's natural flexibility makes it an excellent material for earthquake-prone regions. In this article, we explore the engineering principles behind bamboo's seismic resilience and showcase projects that have withstood significant tremors. Learn how our construction techniques maximize safety while maintaining sustainability.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <h3>Sustainability First</h3>
-                    <p>We prioritize eco-friendly materials and processes in every project, minimizing environmental impact while maximizing efficiency.</p>
-                </div>
-                
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-hand-holding-heart"></i>
+                    
+                    <div class="blog-post">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1593692909680-2d3e4ccf0b4f?ixlib=rb-4.0.3" alt="Bamboo Treatment Process">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar"></i> May 28, 2023</span>
+                                <span><i class="far fa-user"></i> Priya Sharma</span>
+                                <span><i class="far fa-folder"></i> Materials</span>
+                            </div>
+                            <h3>Our Eco-Friendly Bamboo Treatment Process</h3>
+                            <p>Discover how we extend bamboo's lifespan without harmful chemicals. Our proprietary treatment process uses borax and natural resins to protect against insects and decay while maintaining the material's structural integrity. We break down each step of our sustainable treatment method that adds decades to bamboo structures.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <h3>Community Focus</h3>
-                    <p>We empower local communities by creating jobs, sharing knowledge, and supporting bamboo cultivation initiatives.</p>
-                </div>
-                
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-lightbulb"></i>
+                    
+                    <div class="blog-post">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1556911220-ef412ae179a9?ixlib=rb-4.0.3" alt="Bamboo Energy Efficiency">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar"></i> April 12, 2023</span>
+                                <span><i class="far fa-user"></i> Rajiv Mehta</span>
+                                <span><i class="far fa-folder"></i> Sustainability</span>
+                            </div>
+                            <h3>How Bamboo Houses Reduce Energy Consumption</h3>
+                            <p>Explore the remarkable thermal properties of bamboo that make it a champion of energy efficiency. We compare temperature data from bamboo homes versus concrete structures and reveal how our clients save 30-40% on cooling costs annually. Learn about the science behind bamboo's natural insulation capabilities.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <h3>Innovation Driven</h3>
-                    <p>We constantly research and develop new techniques to enhance bamboo's structural capabilities and applications.</p>
-                </div>
-                
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-award"></i>
+                    
+                    <div class="blog-post">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1556911220-ef412ae179a9?ixlib=rb-4.0.3" alt="Bamboo Design">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar"></i> March 5, 2023</span>
+                                <span><i class="far fa-user"></i> Ananya Patel</span>
+                                <span><i class="far fa-folder"></i> Design</span>
+                            </div>
+                            <h3>Innovative Bamboo Design for Modern Living</h3>
+                            <p>Bamboo isn't just for traditional huts anymore. Discover how contemporary architects are using bamboo to create stunning modern homes. We showcase award-winning designs that blend sustainability with luxury, featuring open floor plans, innovative joinery techniques, and seamless indoor-outdoor living.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <h3>Quality Commitment</h3>
-                    <p>Every structure we build meets rigorous quality standards, ensuring durability, safety, and customer satisfaction.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team">
-        <div class="container">
-            <div class="section-title">
-                <h2>Meet Our Leadership Team</h2>
-                <p>The passionate individuals driving our sustainable mission forward</p>
-            </div>
-            
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3" alt="Dilip Sahni">
-                    </div>
-                    <div class="member-info">
-                        <h3>Dilip Sahni</h3>
-                        <p>Founder & CEO</p>
-                        <p>With over 20 years in sustainable construction, Dilip is a recognized expert in bamboo engineering.</p>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/dilip-sahani"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://twitter.com/sahani_dil35695"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <div class="page-item">
+                            <a href="#" class="page-link"><i class="fas fa-chevron-left"></i></a>
+                        </div>
+                        <div class="page-item">
+                            <a href="#" class="page-link active">1</a>
+                        </div>
+                        <div class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </div>
+                        <div class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </div>
+                        <div class="page-item">
+                            <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3" alt="Priya Sharma">
-                    </div>
-                    <div class="member-info">
-                        <h3>Priya Sharma</h3>
-                        <p>Head of Design</p>
-                        <p>Architect specializing in sustainable design with a passion for bamboo aesthetics.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-title">Search</h3>
+                        <div class="search-box">
+                            <form>
+                                <div class="form-group" style="display: flex;">
+                                    <input type="text" class="form-control" placeholder="Search articles..." style="flex: 1; padding: 12px 15px; border: 1px solid var(--light-gray); border-radius: 4px 0 0 4px; font-family: 'Poppins', sans-serif;">
+                                    <button type="submit" class="btn" style="border-radius: 0 4px 4px 0; padding: 12px 20px;"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3" alt="Rajiv Mehta">
+                    
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-title">Categories</h3>
+                        <ul class="categories-list">
+                            <li><a href="#">Construction <span>12</span></a></li>
+                            <li><a href="#">Design <span>8</span></a></li>
+                            <li><a href="#">Materials <span>15</span></a></li>
+                            <li><a href="#">Sustainability <span>9</span></a></li>
+                            <li><a href="#">Maintenance <span>6</span></a></li>
+                            <li><a href="#">Projects <span>11</span></a></li>
+                        </ul>
                     </div>
-                    <div class="member-info">
-                        <h3>Rajiv Mehta</h3>
-                        <p>Construction Director</p>
-                        <p>Master builder with expertise in traditional and modern bamboo construction techniques.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                    
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-title">Recent Posts</h3>
+                        <div class="recent-post">
+                            <div class="recent-post-img">
+                                <img src="https://images.unsplash.com/photo-1593692909680-2d3e4ccf0b4f?ixlib=rb-4.0.3" alt="Recent Post">
+                            </div>
+                            <div class="recent-post-content">
+                                <h4><a href="#">Modern Bamboo Roofing Techniques</a></h4>
+                                <div class="post-date"><i class="far fa-calendar"></i> June 2, 2023</div>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-post">
+                            <div class="recent-post-img">
+                                <img src="https://images.unsplash.com/photo-1556911220-ef412ae179a9?ixlib=rb-4.0.3" alt="Recent Post">
+                            </div>
+                            <div class="recent-post-content">
+                                <h4><a href="#">Bamboo vs. Traditional Materials</a></h4>
+                                <div class="post-date"><i class="far fa-calendar"></i> May 18, 2023</div>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-post">
+                            <div class="recent-post-img">
+                                <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3" alt="Recent Post">
+                            </div>
+                            <div class="recent-post-content">
+                                <h4><a href="#">Integrating Solar with Bamboo Structures</a></h4>
+                                <div class="post-date"><i class="far fa-calendar"></i> April 30, 2023</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3" alt="Ananya Patel">
-                    </div>
-                    <div class="member-info">
-                        <h3>Ananya Patel</h3>
-                        <p>Sustainability Officer</p>
-                        <p>Environmental scientist ensuring our practices meet the highest ecological standards.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-medium"></i></a>
+                    
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-title">Popular Tags</h3>
+                        <div class="tags">
+                            <a href="#" class="tag">Construction</a>
+                            <a href="#" class="tag">Design</a>
+                            <a href="#" class="tag">Eco-Friendly</a>
+                            <a href="#" class="tag">Bamboo Treatment</a>
+                            <a href="#" class="tag">Sustainable</a>
+                            <a href="#" class="tag">Energy Efficient</a>
+                            <a href="#" class="tag">Renewable</a>
+                            <a href="#" class="tag">DIY</a>
                         </div>
+                    </div>
+                    
+                    <div class="sidebar-widget newsletter">
+                        <h3>Subscribe to Newsletter</h3>
+                        <p>Get the latest updates on sustainable building and bamboo construction</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-text">Projects Completed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">15</div>
-                    <div class="stat-text">Years Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-text">Client Satisfaction</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">250k+</div>
-                    <div class="stat-text">Bamboo Plants Cultivated</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Build Sustainably?</h2>
-            <p>Join our growing community of eco-conscious homeowners and businesses building a greener future with bamboo.</p>
-            <a href="#" class="btn">Start Your Project</a>
-            <a href="#" class="btn btn-outline" style="margin-left: 15px;">Contact Our Team</a>
         </div>
     </section>
 
@@ -899,7 +984,7 @@
                         <a href="https://www.facebook.com/share/1LKbW2ewzs/"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/dilip-sahani"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%80%E0%A4%AA-%E0%A4%AD%E0%A4%BE%E0%A4%88-%E0%A4%9B%E0%A4%AA%E0%A5%8D%E0%A4%AA%E0%A4%B0-%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A4%BE-dilip-sahani-179391376/"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://x.com/sahani_dil35695"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
@@ -918,7 +1003,7 @@
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="/Bulk Sale.html">Bulk Sale</a></li>
+                        <li><a href="/services/bulb-sale">Bulb Sale</a></li>
                         <li><a href="/services/labour-service">Labour Service</a></li>
                         <li><a href="/services/retailer">Retailer Program</a></li>
                         <li><a href="#">Custom Bamboo Homes</a></li>

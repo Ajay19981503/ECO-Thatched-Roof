@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | GreenBamboo Homes - Sustainable Construction</title>
-    <meta name="description" content="Learn about our journey in sustainable bamboo construction. Discover our mission, values, and team dedicated to eco-friendly building solutions.">
+    <title>Labour Services | GreenBamboo Homes - Skilled Bamboo Construction</title>
+    <meta name="description" content="Professional bamboo construction labour services. Expert craftsmen for sustainable building projects of all sizes.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
     <style>
@@ -243,9 +243,9 @@
             transition: var(--transition);
         }
         
-        /* About Hero Section */
-        .about-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/8b/d2/33/8bd233958aa32a7434557b7ec9e96bfd.jpg') no-repeat center center/cover;
+        /* Labour Hero Section */
+        .labour-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/01/07/72/01077238025fb89cfb693e8b647cfe33.jpg') no-repeat center center/cover;
             height: 70vh;
             min-height: 600px;
             display: flex;
@@ -255,116 +255,168 @@
             margin-top: 80px;
         }
         
-        .about-hero-content {
+        .labour-hero-content {
             max-width: 800px;
             padding: 0 20px;
         }
         
-        .about-hero h1 {
+        .labour-hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         
-        .about-hero p {
+        .labour-hero p {
             font-size: 1.2rem;
             margin-bottom: 30px;
             max-width: 600px;
         }
         
-        /* Story Section */
-        .story {
+        /* Services Section */
+        .services {
             background: white;
         }
         
-        .story-container {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-        
-        .story-image {
-            flex: 1;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow-hover);
-        }
-        
-        .story-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-        
-        .story-image:hover img {
-            transform: scale(1.05);
-        }
-        
-        .story-content {
-            flex: 1;
-        }
-        
-        .story-content h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: var(--primary-dark);
-        }
-        
-        .story-content p {
-            margin-bottom: 20px;
-            color: var(--gray);
-        }
-        
-        /* Mission Section */
-        .mission {
-            background: linear-gradient(to bottom, #f5f9f5, #e8f5e9);
-        }
-        
-        .mission-grid {
+        .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
         
-        .mission-card {
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .service-icon {
+            font-size: 60px;
+            color: var(--primary);
+            margin: 30px 0 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+            padding: 0 20px;
+        }
+        
+        .service-card p {
+            color: var(--gray);
+            padding: 0 20px 30px;
+        }
+        
+        /* Process Section */
+        .process {
+            background: linear-gradient(to bottom, #f5f9f5, #e8f5e9);
+        }
+        
+        .process-steps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step-content {
+            background: white;
+            border-radius: 8px;
+            padding: 30px 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .step h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            background: white;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
             background: white;
             border-radius: 8px;
             padding: 40px 30px;
             box-shadow: var(--shadow);
             transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
         }
         
-        .mission-card:hover {
+        .benefit-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-hover);
         }
         
-        .mission-icon {
+        .benefit-icon {
             font-size: 48px;
             color: var(--primary);
             margin-bottom: 20px;
         }
         
-        .mission-card h3 {
+        .benefit-card h3 {
             font-size: 22px;
             margin-bottom: 15px;
             color: var(--primary-dark);
         }
         
-        /* Team Section */
-        .team {
-            background: white;
+        /* Pricing Section */
+        .pricing {
+            background: linear-gradient(to bottom, #e8f5e9, #f5f9f5);
         }
         
-        .team-grid {
+        .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
         
-        .team-member {
+        .pricing-card {
             background: white;
             border-radius: 8px;
             overflow: hidden;
@@ -373,112 +425,128 @@
             text-align: center;
         }
         
-        .team-member:hover {
+        .pricing-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-hover);
         }
         
-        .member-image {
-            height: 250px;
-            overflow: hidden;
-        }
-        
-        .member-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .team-member:hover .member-image img {
-            transform: scale(1.1);
-        }
-        
-        .member-info {
-            padding: 25px 20px;
-        }
-        
-        .member-info h3 {
-            font-size: 20px;
-            margin-bottom: 5px;
-            color: var(--primary-dark);
-        }
-        
-        .member-info p {
-            color: var(--secondary);
-            margin-bottom: 15px;
-        }
-        
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .social-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: var(--light);
-            color: var(--primary);
-            transition: var(--transition);
-        }
-        
-        .social-icons a:hover {
+        .pricing-header {
             background: var(--primary);
             color: white;
-            transform: translateY(-3px);
+            padding: 30px 20px;
         }
         
-        /* Stats Section */
-        .stats {
+        .pricing-header h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .price-duration {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+        
+        .pricing-features {
+            padding: 30px 20px;
+            list-style: none;
+        }
+        
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-card .btn {
+            margin: 20px;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background: white;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 30px;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 80px;
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            color: var(--primary-light);
+            opacity: 0.3;
+            font-family: serif;
+        }
+        
+        .testimonial-text {
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            background: var(--light-gray);
+        }
+        
+        .author-info h4 {
+            margin: 0;
+            color: var(--dark);
+        }
+        
+        .author-info p {
+            color: var(--gray);
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        /* CTA Section */
+        .cta {
             background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(46, 125, 50, 0.9)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3') no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 100px 0;
         }
         
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-        }
-        
-        .stat-item {
-            padding: 20px;
-        }
-        
-        .stat-number {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: var(--secondary);
-        }
-        
-        .stat-text {
-            font-size: 18px;
-        }
-        
-        /* CTA Section */
-        .cta {
-            background: white;
-            text-align: center;
-        }
-        
         .cta h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: var(--primary-dark);
         }
         
         .cta p {
             max-width: 700px;
             margin: 0 auto 30px;
             font-size: 1.1rem;
-            color: var(--gray);
         }
         
         /* Footer - Same as Homepage */
@@ -637,12 +705,8 @@
                 display: block;
             }
             
-            .about-hero h1 {
+            .labour-hero h1 {
                 font-size: 2.5rem;
-            }
-            
-            .story-container {
-                flex-direction: column;
             }
         }
         
@@ -655,16 +719,16 @@
                 font-size: 28px;
             }
             
-            .about-hero {
+            .labour-hero {
                 min-height: 500px;
             }
             
-            .about-hero h1 {
+            .labour-hero h1 {
                 font-size: 2rem;
             }
             
-            .stat-number {
-                font-size: 36px;
+            .step:after {
+                display: none;
             }
         }
     </style>
@@ -681,14 +745,14 @@
                 
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="About Us.html" class="nav-link active">About Us</a></li>
+                    <li class="nav-item"><a href="About Us.html" class="nav-link">About Us</a></li>
                     <li class="nav-item has-dropdown">
-                        <a href="#" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i></a>
+                        <a href="#" class="nav-link active">Services <i class="fas fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="/Bulk Sale.html"><i class="fas fa-boxes"></i> Bulk Sale</a></li>
-                            <li><a href="/Labour Service.html"><i class="fas fa-digging"></i> Labour Service</a></li>
+                            <li><a href="/Labour Service.html" class="active"><i class="fas fa-digging"></i> Labour Service</a></li>
                             <li><a href="/Retailr.html"><i class="fas fa-store"></i> Retailer</a></li>
-                            <li><a href="/Product page.html"><i class="fa-brands fa-product-hunt"></i> Product</a></li>
+                            <li><a href="/"><i class="fa-brands fa-product-hunt"></i> Product</a></li>
 
                         </ul>
                     </li>
@@ -705,174 +769,304 @@
         </div>
     </header>
 
-    <!-- About Hero Section -->
-    <section class="about-hero">
+    <!-- Labour Hero Section -->
+    <section class="labour-hero">
         <div class="container">
-            <div class="about-hero-content">
-                <h1>Our Journey in Sustainable Construction</h1>
-                <p>For over a decade, we've been pioneering eco-friendly bamboo construction solutions that harmonize with nature while meeting modern living standards.</p>
-                <a href="#story" class="btn btn-secondary">Discover Our Story</a>
+            <div class="labour-hero-content">
+                <h1>Expert Bamboo Construction Labour</h1>
+                <p>Skilled craftsmen with decades of experience in sustainable bamboo construction. From traditional thatching to modern structural designs, we deliver quality workmanship for every project.</p>
+                <a href="#services" class="btn btn-secondary">View Our Services</a>
             </div>
         </div>
     </section>
 
-    <!-- Story Section -->
-    <section id="story" class="story">
-        <div class="container">
-            <div class="story-container">
-                <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1556911220-ef412ae179a9?ixlib=rb-4.0.3" alt="Dilip Sahni with bamboo">
-                </div>
-                <div class="story-content">
-                    <h2>Our Humble Beginnings</h2>
-                    <p>Founded in 2010 by Dilip Sahni, GreenBamboo Homes started as a small workshop with a big vision. Growing up in a rural village surrounded by bamboo groves, Dilip witnessed firsthand the incredible potential of this renewable resource. Frustrated by the environmental impact of conventional construction, he set out to create sustainable alternatives.</p>
-                    <p>Our journey began with a single bamboo hut and a commitment to eco-friendly practices. What started as a passion project has grown into an innovative company with projects spanning across three countries and a team of dedicated bamboo specialists.</p>
-                    <p>Today, we blend traditional craftsmanship with modern engineering to create structures that are not only beautiful but also environmentally responsible. Each project we undertake reflects our core values of sustainability, quality, and innovation.</p>
-                    <a href="#" class="btn">Meet Our Team</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section class="mission">
+    <!-- Services Section -->
+    <section id="services" class="services">
         <div class="container">
             <div class="section-title">
-                <h2>Our Mission & Values</h2>
-                <p>Driving sustainable change through innovative bamboo construction</p>
+                <h2>Our Labour Services</h2>
+                <p>Specialized bamboo construction services for residential and commercial projects</p>
             </div>
             
-            <div class="mission-grid">
-                <div class="mission-card">
-                    <div class="mission-icon">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Bamboo Structure Construction</h3>
+                    <p>Full construction of bamboo houses, pavilions, and structures with traditional and modern techniques.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-roofing"></i>
+                    </div>
+                    <h3>Thatched Roofing</h3>
+                    <p>Expert thatching services using sustainable materials for natural insulation and aesthetic appeal.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Bamboo Repair & Maintenance</h3>
+                    <p>Professional maintenance and repair services to extend the life of your bamboo structures.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>Custom Bamboo Design</h3>
+                    <p>Custom design and fabrication of bamboo furniture, fixtures, and decorative elements.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Bamboo Treatment & Processing</h3>
+                    <p>Eco-friendly treatment services to enhance durability and resistance to pests and weathering.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Installation Services</h3>
+                    <p>Professional installation of bamboo flooring, panels, and other bamboo building materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Work Process</h2>
+                <p>Simple and efficient workflow from consultation to project completion</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Consultation</h3>
+                        <p>We discuss your project requirements, budget, and timeline to understand your vision.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Site Assessment</h3>
+                        <p>Our team visits the site to evaluate conditions and plan the construction approach.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Material Preparation</h3>
+                        <p>We select and treat bamboo materials according to project specifications.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Construction</h3>
+                        <p>Our skilled craftsmen execute the construction with precision and attention to detail.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Quality Check</h3>
+                        <p>We conduct thorough inspections to ensure the highest quality standards are met.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Project Handover</h3>
+                        <p>We deliver the completed project and provide maintenance guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Our Labour Services</h2>
+                <p>Advantages of working with our skilled bamboo craftsmen</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Expert Craftsmen</h3>
+                    <p>Our team has 10+ years of specialized experience in bamboo construction techniques.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <h3>Sustainability First</h3>
-                    <p>We prioritize eco-friendly materials and processes in every project, minimizing environmental impact while maximizing efficiency.</p>
+                    <h3>Eco-Friendly Practices</h3>
+                    <p>We use sustainable materials and processes with minimal environmental impact.</p>
                 </div>
                 
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-hand-holding-heart"></i>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Community Focus</h3>
-                    <p>We empower local communities by creating jobs, sharing knowledge, and supporting bamboo cultivation initiatives.</p>
+                    <h3>Timely Completion</h3>
+                    <p>We deliver projects on schedule with efficient workflow management.</p>
                 </div>
                 
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-lightbulb"></i>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Innovation Driven</h3>
-                    <p>We constantly research and develop new techniques to enhance bamboo's structural capabilities and applications.</p>
+                    <h3>Quality Assurance</h3>
+                    <p>Rigorous quality checks ensure exceptional craftsmanship in every project.</p>
                 </div>
                 
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-award"></i>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rupee-sign"></i>
                     </div>
-                    <h3>Quality Commitment</h3>
-                    <p>Every structure we build meets rigorous quality standards, ensuring durability, safety, and customer satisfaction.</p>
+                    <h3>Competitive Pricing</h3>
+                    <p>Transparent pricing with no hidden costs for all our labour services.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Post-Service Support</h3>
+                    <p>Continued support and maintenance guidance after project completion.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team">
+    <!-- Pricing Section -->
+    <section class="pricing">
         <div class="container">
             <div class="section-title">
-                <h2>Meet Our Leadership Team</h2>
-                <p>The passionate individuals driving our sustainable mission forward</p>
+                <h2>Service Packages</h2>
+                <p>Flexible options to suit different project requirements</p>
             </div>
             
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3" alt="Dilip Sahni">
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic Package</h3>
+                        <div class="price">₹800<span>/day</span></div>
+                        <div class="price-duration">Per skilled labourer</div>
                     </div>
-                    <div class="member-info">
-                        <h3>Dilip Sahni</h3>
-                        <p>Founder & CEO</p>
-                        <p>With over 20 years in sustainable construction, Dilip is a recognized expert in bamboo engineering.</p>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/dilip-sahani"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://twitter.com/sahani_dil35695"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                    </div>
+                    <ul class="pricing-features">
+                        <li>Single skilled craftsman</li>
+                        <li>8 hours per day</li>
+                        <li>Basic tools included</li>
+                        <li>Standard bamboo materials</li>
+                        <li>Basic construction work</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Book Now</a>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3" alt="Priya Sharma">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Standard Package</h3>
+                        <div class="price">₹1,500<span>/day</span></div>
+                        <div class="price-duration">Per team (3 members)</div>
                     </div>
-                    <div class="member-info">
-                        <h3>Priya Sharma</h3>
-                        <p>Head of Design</p>
-                        <p>Architect specializing in sustainable design with a passion for bamboo aesthetics.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                        </div>
-                    </div>
+                    <ul class="pricing-features">
+                        <li>Team of 3 skilled craftsmen</li>
+                        <li>Specialized bamboo tools</li>
+                        <li>Premium bamboo materials</li>
+                        <li>Thatching and structural work</li>
+                        <li>Project supervision</li>
+                    </ul>
+                    <a href="#" class="btn">Book Now</a>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3" alt="Rajiv Mehta">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium Package</h3>
+                        <div class="price">₹3,500<span>/day</span></div>
+                        <div class="price-duration">Complete team</div>
                     </div>
-                    <div class="member-info">
-                        <h3>Rajiv Mehta</h3>
-                        <p>Construction Director</p>
-                        <p>Master builder with expertise in traditional and modern bamboo construction techniques.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3" alt="Ananya Patel">
-                    </div>
-                    <div class="member-info">
-                        <h3>Ananya Patel</h3>
-                        <p>Sustainability Officer</p>
-                        <p>Environmental scientist ensuring our practices meet the highest ecological standards.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-medium"></i></a>
-                        </div>
-                    </div>
+                    <ul class="pricing-features">
+                        <li>Full team of 5+ specialists</li>
+                        <li>Master craftsman supervision</li>
+                        <li>Advanced bamboo treatment</li>
+                        <li>Custom design implementation</li>
+                        <li>Project management included</li>
+                        <li>Quality assurance</li>
+                    </ul>
+                    <a href="#" class="btn">Book Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
+    <!-- Testimonials Section -->
+    <section class="testimonials">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-text">Projects Completed</div>
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about our labour services</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"The team from GreenBamboo transformed our backyard with a stunning bamboo pavilion. Their craftsmanship was exceptional, and they completed the project ahead of schedule. Highly recommend their labour services!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>New Delhi</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">15</div>
-                    <div class="stat-text">Years Experience</div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"We hired their thatching specialists for our resort in Goa. The attention to detail and quality of work was outstanding. The team was professional, punctual, and cleaned up thoroughly after completion."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Goa</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-text">Client Satisfaction</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">250k+</div>
-                    <div class="stat-text">Bamboo Plants Cultivated</div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"Dilip and his team built our dream bamboo house in Kerala. Their expertise in bamboo construction is unmatched. They solved complex structural challenges with innovative solutions. Worth every rupee!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Thomas George</h4>
+                            <p>Kerala</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -881,10 +1075,10 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Ready to Build Sustainably?</h2>
-            <p>Join our growing community of eco-conscious homeowners and businesses building a greener future with bamboo.</p>
-            <a href="#" class="btn">Start Your Project</a>
-            <a href="#" class="btn btn-outline" style="margin-left: 15px;">Contact Our Team</a>
+            <h2>Ready to Start Your Project?</h2>
+            <p>Contact us today for a free consultation and quote for your bamboo construction needs</p>
+            <a href="#" class="btn btn-secondary">Request a Quote</a>
+            <a href="#" class="btn btn-outline" style="margin-left: 15px;">Call Now: +91 98765 43210</a>
         </div>
     </section>
 
@@ -918,8 +1112,8 @@
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="/Bulk Sale.html">Bulk Sale</a></li>
-                        <li><a href="/services/labour-service">Labour Service</a></li>
+                        <li><a href="/services/bulb-sale">Bulb Sale</a></li>
+                        <li><a href="labour-service.html" class="active">Labour Service</a></li>
                         <li><a href="/services/retailer">Retailer Program</a></li>
                         <li><a href="#">Custom Bamboo Homes</a></li>
                         <li><a href="#">Renovation & Repair</a></li>

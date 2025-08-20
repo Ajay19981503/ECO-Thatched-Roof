@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | GreenBamboo Homes - Sustainable Construction</title>
-    <meta name="description" content="Learn about our journey in sustainable bamboo construction. Discover our mission, values, and team dedicated to eco-friendly building solutions.">
+    <title>Contact Us | GreenBamboo Homes | Eco-Friendly Bamboo Houses</title>
+    <meta name="description" content="Get in touch with GreenBamboo Homes for sustainable bamboo house construction, quotes, and inquiries.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
     <style>
@@ -121,7 +121,7 @@
             margin: 0 auto;
         }
         
-        /* Header & Navigation - Same as Homepage */
+        /* Header & Navigation */
         header {
             background-color: rgba(255, 255, 255, 0.95);
             position: fixed;
@@ -243,245 +243,221 @@
             transition: var(--transition);
         }
         
-        /* About Hero Section */
-        .about-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/8b/d2/33/8bd233958aa32a7434557b7ec9e96bfd.jpg') no-repeat center center/cover;
-            height: 70vh;
-            min-height: 600px;
+        /* Contact Hero */
+        .contact-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/736x/ae/6a/fd/ae6afd4efca686abf1eb7e25bba0dc06.jpg') no-repeat center center/cover;
+            height: 50vh;
+            min-height: 400px;
             display: flex;
             align-items: center;
             color: white;
+            text-align: center;
             position: relative;
             margin-top: 80px;
         }
         
-        .about-hero-content {
+        .contact-hero-content {
             max-width: 800px;
+            margin: 0 auto;
             padding: 0 20px;
         }
         
-        .about-hero h1 {
-            font-size: 3.5rem;
+        .contact-hero h1 {
+            font-size: 3rem;
             margin-bottom: 20px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         
-        .about-hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 600px;
+        /* Contact Section */
+        .contact-section {
+            background-color: white;
         }
         
-        /* Story Section */
-        .story {
-            background: white;
-        }
-        
-        .story-container {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-        
-        .story-image {
-            flex: 1;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow-hover);
-        }
-        
-        .story-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-        
-        .story-image:hover img {
-            transform: scale(1.05);
-        }
-        
-        .story-content {
-            flex: 1;
-        }
-        
-        .story-content h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: var(--primary-dark);
-        }
-        
-        .story-content p {
-            margin-bottom: 20px;
-            color: var(--gray);
-        }
-        
-        /* Mission Section */
-        .mission {
-            background: linear-gradient(to bottom, #f5f9f5, #e8f5e9);
-        }
-        
-        .mission-grid {
+        .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            gap: 40px;
         }
         
-        .mission-card {
-            background: white;
+        .contact-info {
+            background: #f5f9f5;
             border-radius: 8px;
             padding: 40px 30px;
             box-shadow: var(--shadow);
-            transition: var(--transition);
-            text-align: center;
         }
         
-        .mission-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-        }
-        
-        .mission-icon {
-            font-size: 48px;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
-        
-        .mission-card h3 {
-            font-size: 22px;
-            margin-bottom: 15px;
+        .contact-info h3 {
+            font-size: 24px;
+            margin-bottom: 25px;
             color: var(--primary-dark);
+            position: relative;
+            padding-bottom: 10px;
         }
         
-        /* Team Section */
-        .team {
-            background: white;
+        .contact-info h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
         }
         
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+        .contact-details {
+            list-style: none;
+            margin-bottom: 30px;
         }
         
-        .team-member {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            text-align: center;
+        .contact-details li {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
         }
         
-        .team-member:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-        }
-        
-        .member-image {
-            height: 250px;
-            overflow: hidden;
-        }
-        
-        .member-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .team-member:hover .member-image img {
-            transform: scale(1.1);
-        }
-        
-        .member-info {
-            padding: 25px 20px;
-        }
-        
-        .member-info h3 {
+        .contact-details i {
+            margin-right: 15px;
+            color: var(--primary);
             font-size: 20px;
-            margin-bottom: 5px;
-            color: var(--primary-dark);
+            min-width: 25px;
+            margin-top: 5px;
         }
         
-        .member-info p {
-            color: var(--secondary);
-            margin-bottom: 15px;
-        }
-        
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .social-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: var(--light);
-            color: var(--primary);
-            transition: var(--transition);
-        }
-        
-        .social-icons a:hover {
-            background: var(--primary);
-            color: white;
-            transform: translateY(-3px);
-        }
-        
-        /* Stats Section */
-        .stats {
-            background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(46, 125, 50, 0.9)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-        }
-        
-        .stat-item {
-            padding: 20px;
-        }
-        
-        .stat-number {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: var(--secondary);
-        }
-        
-        .stat-text {
+        .contact-details div h4 {
             font-size: 18px;
+            margin-bottom: 5px;
         }
         
-        /* CTA Section */
-        .cta {
-            background: white;
-            text-align: center;
-        }
-        
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--primary-dark);
-        }
-        
-        .cta p {
-            max-width: 700px;
-            margin: 0 auto 30px;
-            font-size: 1.1rem;
+        .contact-details div p {
             color: var(--gray);
         }
         
-        /* Footer - Same as Homepage */
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            transition: var(--transition);
+            font-size: 18px;
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-5px);
+        }
+        
+        .contact-form {
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--light-gray);
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .map-container {
+            margin-top: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background-color: #f5f9f5;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--primary-light);
+            color: white;
+        }
+        
+        .faq-question i {
+            transition: var(--transition);
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px 25px;
+            max-height: 1000px;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        /* Footer */
         footer {
             background: var(--primary-dark);
             color: white;
@@ -578,7 +554,7 @@
             color: #aaa;
         }
         
-        /* Mobile Responsiveness */
+        /* Mobile Navigation */
         @media (max-width: 992px) {
             .hamburger {
                 display: block;
@@ -637,12 +613,8 @@
                 display: block;
             }
             
-            .about-hero h1 {
+            .contact-hero h1 {
                 font-size: 2.5rem;
-            }
-            
-            .story-container {
-                flex-direction: column;
             }
         }
         
@@ -655,33 +627,33 @@
                 font-size: 28px;
             }
             
-            .about-hero {
-                min-height: 500px;
+            .contact-hero {
+                min-height: 350px;
             }
             
-            .about-hero h1 {
+            .contact-hero h1 {
                 font-size: 2rem;
             }
             
-            .stat-number {
-                font-size: 36px;
+            .contact-form {
+                padding: 25px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header & Navigation - Same as Homepage -->
+    <!-- Header & Navigation -->
     <header>
         <div class="container">
             <div class="header-inner">
                 <div class="logo">
-                    <img src="logo.png" alt="GreenBamboo Homes">
-                    <h1>Dilip Bhai <span>Thatched Roof</span> Dilip Sahni ♻️</h1>
+                    <img src="logo.png" alt="GreenBamboo Homes Logo">
+                    <h1>Dilip bhai<span> Thatched Roof</span> Dilip Sahni ♻️</h1>
                 </div>
                 
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="About Us.html" class="nav-link active">About Us</a></li>
+                    <li class="nav-item"><a href="About Us.html" class="nav-link">About Us</a></li>
                     <li class="nav-item has-dropdown">
                         <a href="#" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i></a>
                         <ul class="dropdown-menu">
@@ -693,7 +665,7 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a href="Blog.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link active">Contact</a></li>
                 </ul>
                 
                 <div class="hamburger">
@@ -705,190 +677,162 @@
         </div>
     </header>
 
-    <!-- About Hero Section -->
-    <section class="about-hero">
-        <div class="container">
-            <div class="about-hero-content">
-                <h1>Our Journey in Sustainable Construction</h1>
-                <p>For over a decade, we've been pioneering eco-friendly bamboo construction solutions that harmonize with nature while meeting modern living standards.</p>
-                <a href="#story" class="btn btn-secondary">Discover Our Story</a>
-            </div>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1>Contact GreenBamboo Homes</h1>
+            <p>Have questions about sustainable bamboo construction? We're here to help!</p>
         </div>
     </section>
 
-    <!-- Story Section -->
-    <section id="story" class="story">
-        <div class="container">
-            <div class="story-container">
-                <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1556911220-ef412ae179a9?ixlib=rb-4.0.3" alt="Dilip Sahni with bamboo">
-                </div>
-                <div class="story-content">
-                    <h2>Our Humble Beginnings</h2>
-                    <p>Founded in 2010 by Dilip Sahni, GreenBamboo Homes started as a small workshop with a big vision. Growing up in a rural village surrounded by bamboo groves, Dilip witnessed firsthand the incredible potential of this renewable resource. Frustrated by the environmental impact of conventional construction, he set out to create sustainable alternatives.</p>
-                    <p>Our journey began with a single bamboo hut and a commitment to eco-friendly practices. What started as a passion project has grown into an innovative company with projects spanning across three countries and a team of dedicated bamboo specialists.</p>
-                    <p>Today, we blend traditional craftsmanship with modern engineering to create structures that are not only beautiful but also environmentally responsible. Each project we undertake reflects our core values of sustainability, quality, and innovation.</p>
-                    <a href="#" class="btn">Meet Our Team</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section class="mission">
+    <!-- Contact Section -->
+    <section class="contact-section">
         <div class="container">
             <div class="section-title">
-                <h2>Our Mission & Values</h2>
-                <p>Driving sustainable change through innovative bamboo construction</p>
+                <h2>Get In Touch</h2>
+                <p>Reach out to us for inquiries, quotes, or to schedule a consultation</p>
             </div>
             
-            <div class="mission-grid">
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-leaf"></i>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p>Dilip Sahani, Dr. Abhay Kumar, Jail Gate, Bahraini- Purina Highway, Pokharia Rd, near Bahraini- Purina Highway, Begusarai, Bihar 851101</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>+62 123 456 7890</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>info@greenbamboo.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1LKbW2ewzs/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%80%E0%A4%AA-%E0%A4%AD%E0%A4%BE%E0%A4%88-%E0%A4%9B%E0%A4%AA%E0%A5%8D%E0%A4%AA%E0%A4%B0-%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A4%BE-dilip-sahani-179391376/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/sahani_dil35695"><i class="fab fa-twitter"></i></a>
                     </div>
-                    <h3>Sustainability First</h3>
-                    <p>We prioritize eco-friendly materials and processes in every project, minimizing environmental impact while maximizing efficiency.</p>
                 </div>
                 
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-hand-holding-heart"></i>
-                    </div>
-                    <h3>Community Focus</h3>
-                    <p>We empower local communities by creating jobs, sharing knowledge, and supporting bamboo cultivation initiatives.</p>
-                </div>
-                
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Innovation Driven</h3>
-                    <p>We constantly research and develop new techniques to enhance bamboo's structural capabilities and applications.</p>
-                </div>
-                
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Quality Commitment</h3>
-                    <p>Every structure we build meets rigorous quality standards, ensuring durability, safety, and customer satisfaction.</p>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="What is this regarding?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
                 </div>
             </div>
+            
+            <div class="map-container" style="width:100%; height:400px;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d<ZOOMEDISTANCE>!2d86.1435842!3d25.4215036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f21bf00bf440dd%3A0xae661b569d30dc8f!2sDilip+Sahani!5e0!3m2!1sen!2sin!4v<UNIX_TIMESTAMP>!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team">
+    <!-- FAQ Section -->
+    <section class="faq-section">
         <div class="container">
             <div class="section-title">
-                <h2>Meet Our Leadership Team</h2>
-                <p>The passionate individuals driving our sustainable mission forward</p>
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our bamboo construction services</p>
             </div>
             
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3" alt="Dilip Sahni">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does it take to build a bamboo house?
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="member-info">
-                        <h3>Dilip Sahni</h3>
-                        <p>Founder & CEO</p>
-                        <p>With over 20 years in sustainable construction, Dilip is a recognized expert in bamboo engineering.</p>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/dilip-sahani"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://twitter.com/sahani_dil35695"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
+                    <div class="faq-answer">
+                        <p>The construction time for a bamboo house varies depending on the size and complexity of the design. On average, a standard bamboo house takes 8-12 weeks from design approval to completion. This includes site preparation, foundation work, bamboo treatment, and assembly.</p>
                     </div>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3" alt="Priya Sharma">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are bamboo houses durable in extreme weather?
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="member-info">
-                        <h3>Priya Sharma</h3>
-                        <p>Head of Design</p>
-                        <p>Architect specializing in sustainable design with a passion for bamboo aesthetics.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                        </div>
+                    <div class="faq-answer">
+                        <p>Yes, properly treated bamboo structures are highly durable. Our bamboo undergoes a specialized treatment process that makes it resistant to insects, moisture, and UV damage. Bamboo structures have proven to withstand hurricanes, earthquakes, and other extreme conditions better than many conventional building materials.</p>
                     </div>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3" alt="Rajiv Mehta">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What maintenance is required for bamboo houses?
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="member-info">
-                        <h3>Rajiv Mehta</h3>
-                        <p>Construction Director</p>
-                        <p>Master builder with expertise in traditional and modern bamboo construction techniques.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
+                    <div class="faq-answer">
+                        <p>Bamboo structures require minimal maintenance. We recommend applying a natural oil finish every 2-3 years to maintain its appearance and protection. Regular inspections of joints and connections are advised. Our team provides maintenance packages to ensure your bamboo home remains in perfect condition for decades.</p>
                     </div>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3" alt="Ananya Patel">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How eco-friendly is bamboo compared to wood?
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="member-info">
-                        <h3>Ananya Patel</h3>
-                        <p>Sustainability Officer</p>
-                        <p>Environmental scientist ensuring our practices meet the highest ecological standards.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-medium"></i></a>
-                        </div>
+                    <div class="faq-answer">
+                        <p>Bamboo is significantly more sustainable than traditional wood. It's actually a grass that grows to maturity in 3-5 years, compared to 20-50 years for trees. Bamboo produces 35% more oxygen than equivalent tree stands and absorbs up to 12 tons of CO2 per hectare annually. Our harvesting methods ensure continuous growth without deforestation.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-text">Projects Completed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">15</div>
-                    <div class="stat-text">Years Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-text">Client Satisfaction</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">250k+</div>
-                    <div class="stat-text">Bamboo Plants Cultivated</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Build Sustainably?</h2>
-            <p>Join our growing community of eco-conscious homeowners and businesses building a greener future with bamboo.</p>
-            <a href="#" class="btn">Start Your Project</a>
-            <a href="#" class="btn btn-outline" style="margin-left: 15px;">Contact Our Team</a>
-        </div>
-    </section>
-
-    <!-- Footer - Same as Homepage -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -899,7 +843,7 @@
                         <a href="https://www.facebook.com/share/1LKbW2ewzs/"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/dilip-sahani"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%80%E0%A4%AA-%E0%A4%AD%E0%A4%BE%E0%A4%88-%E0%A4%9B%E0%A4%AA%E0%A5%8D%E0%A4%AA%E0%A4%B0-%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A4%BE-dilip-sahani-179391376/"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://x.com/sahani_dil35695"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
@@ -910,16 +854,16 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="About Us.html">About Us</a></li>
                         <li><a href="#">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="/Bulk Sale.html">Bulk Sale</a></li>
-                        <li><a href="/services/labour-service">Labour Service</a></li>
+                        <li><a href="/services/bulb-sale">Bulb Sale</a></li>
+                        <li><a href="Labour Service.html">Labour Service</a></li>
                         <li><a href="/services/retailer">Retailer Program</a></li>
                         <li><a href="#">Custom Bamboo Homes</a></li>
                         <li><a href="#">Renovation & Repair</a></li>
@@ -929,7 +873,7 @@
                 <div class="footer-col">
                     <h3>Contact Us</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Eco Park, Bamboo Road, Bali, Indonesia</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dilip Sahani, Dr. Abhay Kumar, Jail Gate, Bahraini- Purina Highway, Pokharia Rd, near Bahraini- Purina Highway, Begusarai, Bihar 851101</li>
                         <li><i class="fas fa-phone"></i> +62 123 456 7890</li>
                         <li><i class="fas fa-envelope"></i> info@greenbamboo.com</li>
                         <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
@@ -985,6 +929,31 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+            });
+        });
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if(name && email && subject && message) {
+                // Show success message
+                alert('Thank you for your message! We will contact you shortly.');
+                this.reset();
+            }
+        });
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
             });
         });
     </script>
