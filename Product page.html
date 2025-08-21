@@ -245,7 +245,7 @@
         
         /* Product Hero */
         .product-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://in.pinterest.com/pin/1017813584513446880/') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/87/c6/e6/87c6e65432e4606b2aad81c18f11ada3.jpg') no-repeat center center/cover;
             height: 60vh;
             min-height: 500px;
             display: flex;
@@ -327,8 +327,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 120px;
-            color: var(--primary);
+            overflow: hidden;
+        }
+        
+        .main-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
         
         .thumbnail-container {
@@ -347,13 +352,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 30px;
-            color: var(--primary);
+            overflow: hidden;
+            border: 2px solid transparent;
         }
         
-        .thumbnail:hover {
+        .thumbnail:hover, .thumbnail.active {
             transform: translateY(-5px);
             box-shadow: var(--shadow);
+            border-color: var(--primary);
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .product-info {
@@ -537,8 +549,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 60px;
-            color: var(--primary);
+            overflow: hidden;
+        }
+        
+        .product-img img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
         
         .product-card-content {
@@ -808,20 +825,20 @@
             <div class="product-container">
                 <div class="product-gallery">
                     <div class="main-image">
-                        <i class="fa-solid fa-building-flag"></i>
+                        <img src="https://images.unsplash.com/photo-1595851807888-4cc4fb5c6c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxlZCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="EcoBright LED Bulb" id="main-product-image">
                     </div>
                     <div class="thumbnail-container">
-                        <div class="thumbnail">
-                            <i class="fa-solid fa-building-flag"></i>
+                        <div class="thumbnail active" data-image="https://images.unsplash.com/photo-1595851807888-4cc4fb5c6c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxlZCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80">
+                            <img src="https://images.unsplash.com/photo-1595851807888-4cc4fb5c6c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxlZCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="Bulb Thumbnail 1">
                         </div>
-                        <div class="thumbnail">
-                            <i class="fa-solid fa-building-flag"></i>
+                        <div class="thumbnail" data-image="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxlZCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80">
+                            <img src="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxlZCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="Bulb Thumbnail 2">
                         </div>
-                        <div class="thumbnail">
-                            <i class="fa-solid fa-building-flag"></i>
+                        <div class="thumbnail" data-image="https://images.unsplash.com/photo-1506806732259-39c2d0268443?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGxlZCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80">
+                            <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGxlZCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="Bulb Thumbnail 3">
                         </div>
-                        <div class="thumbnail">
-                            <i class="fa-solid fa-building-flag"></i>
+                        <div class="thumbnail" data-image="https://images.unsplash.com/photo-1506806732259-39c2d0268443?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGxlZCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80">
+                            <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGxlZCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="Bulb Thumbnail 4">
                         </div>
                     </div>
                 </div>
@@ -924,7 +941,7 @@
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-lightbulb"></i>
+                        <img src="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxlZCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="9W LED Bulb">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-card-title">EcoBright LED Bulb - 9W</h3>
@@ -938,7 +955,7 @@
                 
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-lightbulb"></i>
+                        <img src="https://images.unsplash.com/photo-1495785870248-455c8c00f593?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbGFyJTIwbGlnaHR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="Solar Garden Light">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-card-title">Solar Garden Light</h3>
@@ -952,7 +969,7 @@
                 
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-lightbulb"></i>
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGVkJTIwdHViZSUyMGxpZ2h0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=80" alt="LED Tube Light">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-card-title">LED Tube Light - 18W</h3>
@@ -966,7 +983,7 @@
                 
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-lightbulb"></i>
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGVkJTIwdHViZSUyMGxpZ2h0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=80" alt="Smart LED Bulb">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-card-title">Smart LED Bulb</h3>
@@ -1103,8 +1120,17 @@
         // Thumbnail click functionality
         document.querySelectorAll('.thumbnail').forEach(thumb => {
             thumb.addEventListener('click', () => {
-                const icon = thumb.querySelector('i').className;
-                document.querySelector('.main-image i').className = icon;
+                // Remove active class from all thumbnails
+                document.querySelectorAll('.thumbnail').forEach(t => {
+                    t.classList.remove('active');
+                });
+                
+                // Add active class to clicked thumbnail
+                thumb.classList.add('active');
+                
+                // Update main image
+                const imageUrl = thumb.getAttribute('data-image');
+                document.querySelector('#main-product-image').setAttribute('src', imageUrl);
             });
         });
     </script>
