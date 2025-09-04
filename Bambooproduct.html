@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bamboo Materials | GreenBamboo Homes</title>
+    <title>Bamboo Products | Dilip Bhai Thatched Roof</title>
+    <meta name="description" content="Explore our premium bamboo products - sustainable, eco-friendly and durable. From construction materials to home decor.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
     <style>
@@ -120,8 +121,8 @@
             margin: 0 auto;
         }
         
-        /* Header Styles */
-        .product-header {
+        /* Header & Navigation */
+        header {
             background-color: rgba(255, 255, 255, 0.95);
             position: fixed;
             width: 100%;
@@ -242,17 +243,16 @@
             transition: var(--transition);
         }
         
-        /* Hero Section */
+        /* Product Page Specific Styles */
         .product-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/45/c2/e5/45c2e52ecb3eb2bc2554abaaf524f97d.jpg') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3') no-repeat center center/cover;
             height: 50vh;
             min-height: 400px;
             display: flex;
             align-items: center;
             color: white;
             text-align: center;
-            position: relative;
-            margin-top: 90px;
+            margin-top: 80px;
         }
         
         .product-hero-content {
@@ -271,18 +271,18 @@
             display: flex;
             justify-content: center;
             list-style: none;
-            margin-bottom: 30px;
-            font-size: 0.9rem;
+            margin-bottom: 20px;
         }
         
         .breadcrumb li {
             margin: 0 5px;
+            font-size: 14px;
         }
         
         .breadcrumb li:after {
-            content: '>';
+            content: '/';
             margin-left: 10px;
-            color: #ccc;
+            color: #ddd;
         }
         
         .breadcrumb li:last-child:after {
@@ -295,40 +295,47 @@
         }
         
         .breadcrumb a:hover {
-            color: white;
-            text-decoration: underline;
+            color: var(--secondary);
         }
         
-        /* Filter Section */
-        .filters {
+        /* Filters and Products Layout */
+        .products-section {
+            padding: 60px 0;
+        }
+        
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .filters-sidebar {
+            flex: 1;
+            min-width: 250px;
             background: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 8px;
             box-shadow: var(--shadow);
-            margin-bottom: 40px;
-        }
-        
-        .filter-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        
-        .filter-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            align-self: flex-start;
         }
         
         .filter-group {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 20px;
         }
         
-        .filter-group h3 {
-            font-size: 16px;
-            margin-bottom: 10px;
+        .filter-group:last-child {
+            border-bottom: none;
+        }
+        
+        .filter-title {
+            font-size: 18px;
+            margin-bottom: 15px;
             color: var(--primary-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .filter-options {
@@ -336,25 +343,38 @@
         }
         
         .filter-options li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .filter-options input[type="checkbox"] {
+            margin-right: 10px;
+            accent-color: var(--primary);
         }
         
         .filter-options label {
-            display: flex;
-            align-items: center;
             cursor: pointer;
         }
         
-        .filter-options input {
-            margin-right: 10px;
+        .price-range {
+            width: 100%;
+            margin: 10px 0;
+            accent-color: var(--primary);
         }
         
-        /* Products Grid */
-        .products-container {
+        .price-values {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: var(--gray);
+        }
+        
+        .products-grid {
+            flex: 3;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
         }
         
         .product-card {
@@ -373,75 +393,137 @@
         
         .product-badge {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 15px;
+            left: 15px;
             background: var(--secondary);
             color: white;
-            padding: 5px 10px;
-            border-radius: 4px;
+            padding: 5px 12px;
+            border-radius: 20px;
             font-size: 12px;
             font-weight: 600;
-            z-index: 10;
+            z-index: 2;
         }
         
-        .product-img {
-            height: 200px;
-            background: #f5f9f5;
+        .product-image {
+            height: 220px;
+            width: 100%;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
+            background: #f9f9f9;
         }
         
-        .product-img img {
+        .product-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: var(--transition);
         }
         
-        .product-card:hover .product-img img {
-            transform: scale(1.1);
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
         }
         
-        .product-card-content {
+        .product-info {
             padding: 20px;
         }
         
-        .product-card-title {
+        .product-category {
+            font-size: 12px;
+            color: var(--gray);
+            margin-bottom: 5px;
+        }
+        
+        .product-title {
             font-size: 18px;
             margin-bottom: 10px;
-            color: var(--primary-dark);
+            color: var(--dark);
+            text-decoration: none;
+            display: block;
         }
         
-        .product-card-price {
+        .product-title:hover {
             color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 15px;
-            font-size: 20px;
         }
         
-        .product-card-desc {
-            color: var(--gray);
+        .product-rating {
+            color: #ffc107;
+            margin-bottom: 10px;
             font-size: 14px;
-            margin-bottom: 15px;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
         }
         
-        .product-card-actions {
+        .product-price {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .current-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .original-price {
+            font-size: 16px;
+            text-decoration: line-through;
+            color: var(--gray);
+            margin-left: 10px;
+        }
+        
+        .discount {
+            font-size: 14px;
+            color: #f44336;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+        
+        .product-actions {
             display: flex;
             justify-content: space-between;
+        }
+        
+        .add-to-cart {
+            flex: 2;
+            padding: 10px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-right: 10px;
+        }
+        
+        .add-to-cart:hover {
+            background: var(--primary-dark);
+        }
+        
+        .wishlist {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f5f5;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .wishlist:hover {
+            background: #ffebee;
+            color: #f44336;
         }
         
         /* Pagination */
         .pagination {
             display: flex;
             justify-content: center;
+            margin-top: 50px;
             list-style: none;
-            margin-top: 40px;
         }
         
         .pagination li {
@@ -455,24 +537,24 @@
             width: 40px;
             height: 40px;
             border-radius: 4px;
-            border: 1px solid var(--light-gray);
-            color: var(--dark);
             text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            background: white;
+            box-shadow: var(--shadow);
             transition: var(--transition);
         }
         
         .pagination a:hover, .pagination a.active {
             background: var(--primary);
             color: white;
-            border-color: var(--primary);
         }
         
         /* Footer */
-        .product-footer {
+        footer {
             background: var(--primary-dark);
             color: white;
             padding: 60px 0 30px;
-            margin-top: 60px;
         }
         
         .footer-grid {
@@ -565,7 +647,7 @@
             color: #aaa;
         }
         
-        /* Responsive Design */
+        /* Mobile Navigation */
         @media (max-width: 992px) {
             .hamburger {
                 display: block;
@@ -624,12 +706,17 @@
                 display: block;
             }
             
-            .product-hero h1 {
-                font-size: 2rem;
+            .products-container {
+                flex-direction: column;
             }
             
-            .filter-grid {
-                grid-template-columns: 1fr;
+            .filters-sidebar {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            
+            .product-hero h1 {
+                font-size: 2.5rem;
             }
         }
         
@@ -646,51 +733,37 @@
                 min-height: 350px;
             }
             
-            .products-container {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .products-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .product-card-actions {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .product-card-actions .btn {
-                width: 100%;
+            .product-hero h1 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Product Page Header -->
-    <header class="product-header">
+    <!-- Header & Navigation -->
+    <header>
         <div class="container">
             <div class="header-inner">
                 <div class="logo">
-                    <img src="https://i.ibb.co/0QK4R2H/bamboo-logo.png" alt="GreenBamboo Logo">
-                    <h1>Green<span>Bamboo</span> Homes</h1>
+                    <img src="logo.png" alt="">
+                    <!-- <i class="fas fa-leaf" style="font-size: 32px; color: var(--primary); margin-right: 10px;"></i> -->
+                    <h1>Dilip bhai<span> Thatched Roof</span>  ♻️</h1>
                 </div>
                 
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="About Us.html" class="nav-link">About Us</a></li>
                     <li class="nav-item has-dropdown">
-                        <a href="#" class="nav-link active">Products <i class="fas fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i></a>
+                        <a href="#" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="bulk-sale.html" class="active"><i class="fas fa-boxes"></i> Bamboo Materials</a></li>
-                            <li><a href="lighting.html"><i class="fas fa-lightbulb"></i> Eco Lighting</a></li>
-                            <li><a href="furniture.html"><i class="fas fa-chair"></i> Bamboo Furniture</a></li>
-                            <li><a href="accessories.html"><i class="fas fa-tools"></i> Accessories</a></li>
+                            <li><a href="/Bulk Sale.html"><i class="fas fa-boxes"></i> Bulk Sale</a></li>
+                            <li><a href="/Labour Service.html"><i class="fas fa-digging"></i> Labour Service</a></li>
+                            <li><a href="/Retailr.html"><i class="fas fa-store"></i> Retailer</a></li>
+                            <li><a href="/Product page.html" class="active"><i class="fa-brands fa-product-hunt"></i> Product</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="Blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 
                 <div class="hamburger">
@@ -705,183 +778,259 @@
     <!-- Product Hero Section -->
     <section class="product-hero">
         <div class="product-hero-content">
-            <h1>Premium Bamboo Materials</h1>
             <ul class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li>Bamboo Materials</li>
+                <li><a href="#">Products</a></li>
+                <li>Bamboo Collection</li>
             </ul>
-            <div class="hero-btns">
-                <a href="#products" class="btn">Explore Products</a>
-                <a href="#filters" class="btn btn-outline">Filter Products</a>
-            </div>
+            <h1>Premium Bamboo Products</h1>
+            <p>Discover our sustainable bamboo collection - eco-friendly, durable and beautiful</p>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section id="products">
+    <section class="products-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Bamboo Materials Collection</h2>
-                <p>Discover our wide range of sustainable bamboo materials for construction and design</p>
-            </div>
-            
-            <!-- Filters -->
-            <div class="filters" id="filters">
-                <div class="filter-header">
-                    <h2>Filter Products</h2>
-                    <button class="btn btn-outline">Reset Filters</button>
-                </div>
-                
-                <div class="filter-grid">
-                    <div class="filter-group">
-                        <h3>Categories</h3>
-                        <ul class="filter-options">
-                            <li><label><input type="checkbox" checked> Construction Bamboo</label></li>
-                            <li><label><input type="checkbox" checked> Bamboo Panels</label></li>
-                            <li><label><input type="checkbox" checked> Bamboo Poles</label></li>
-                            <li><label><input type="checkbox" checked> Decorative Bamboo</label></li>
-                            <li><label><input type="checkbox" checked> Bamboo Flooring</label></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="filter-group">
-                        <h3>Price Range</h3>
-                        <ul class="filter-options">
-                            <li><label><input type="radio" name="price" checked> All Prices</label></li>
-                            <li><label><input type="radio" name="price"> Under ₹1000</label></li>
-                            <li><label><input type="radio" name="price"> ₹1000 - ₹5000</label></li>
-                            <li><label><input type="radio" name="price"> ₹5000 - ₹10000</label></li>
-                            <li><label><input type="radio" name="price"> Over ₹10000</label></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="filter-group">
-                        <h3>Bamboo Type</h3>
-                        <ul class="filter-options">
-                            <li><label><input type="checkbox" checked> Moso Bamboo</label></li>
-                            <li><label><input type="checkbox" checked> Guadua Bamboo</label></li>
-                            <li><label><input type="checkbox" checked> Dragon Bamboo</label></li>
-                            <li><label><input type="checkbox" checked> Timor Black Bamboo</label></li>
-                            <li><label><input type="checkbox" checked> Giant Bamboo</label></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="filter-group">
-                        <h3>Sustainability</h3>
-                        <ul class="filter-options">
-                            <li><label><input type="checkbox" checked> Certified Sustainable</label></li>
-                            <li><label><input type="checkbox" checked> Organic Growth</label></li>
-                            <li><label><input type="checkbox" checked> Carbon Negative</label></li>
-                            <li><label><input type="checkbox" checked> Fast Growing</label></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Products Grid -->
             <div class="products-container">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <span class="product-badge">Popular</span>
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1596726895343-5b2f2b1b837b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJhbWJvb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bamboo Poles">
+                <div class="filters-sidebar">
+                    <div class="filter-group">
+                        <div class="filter-title">
+                            <h3>Categories</h3>
+                        </div>
+                        <ul class="filter-options">
+                            <li>
+                                <input type="checkbox" id="construction" checked>
+                                <label for="construction">Construction Materials</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="furniture">
+                                <label for="furniture">Furniture</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="decor">
+                                <label for="decor">Home Decor</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="fencing">
+                                <label for="fencing">Fencing & Outdoor</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="accessories">
+                                <label for="accessories">Accessories</label>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="product-card-content">
-                        <h3 class="product-card-title">Premium Bamboo Poles</h3>
-                        <div class="product-card-price">₹1,250.00</div>
-                        <p class="product-card-desc">High-quality treated bamboo poles for construction and decorative purposes.</p>
-                        <div class="product-card-actions">
-                            <a href="#" class="btn btn-outline">Details</a>
-                            <a href="#" class="btn">Add to Cart</a>
+                    
+                    <div class="filter-group">
+                        <div class="filter-title">
+                            <h3>Price Range</h3>
+                        </div>
+                        <input type="range" min="0" max="10000" value="5000" class="price-range">
+                        <div class="price-values">
+                            <span>₹0</span>
+                            <span>₹10,000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <div class="filter-title">
+                            <h3>Bamboo Type</h3>
+                        </div>
+                        <ul class="filter-options">
+                            <li>
+                                <input type="checkbox" id="moso" checked>
+                                <label for="moso">Moso Bamboo</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="madake">
+                                <label for="madake">Madake Bamboo</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="guadua">
+                                <label for="guadua">Guadua Bamboo</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="common">
+                                <label for="common">Common Bamboo</label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn" style="width: 100%;">Apply Filters</button>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <span class="product-badge">Popular</span>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1591382386627-349b5e9180a3?ixlib=rb-4.0.3" alt="Bamboo Poles">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Construction Material</span>
+                            <a href="#" class="product-title">Premium Bamboo Poles</a>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(42)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹850</span>
+                                <span class="original-price">₹1,000</span>
+                                <span class="discount">15% off</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1594819047050-99defca0d5cf?ixlib=rb-4.0.3" alt="Bamboo Fencing">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Fencing & Outdoor</span>
+                            <a href="#" class="product-title">Bamboo Fencing Panels</a>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(28)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹1,200</span>
+                                <span class="original-price">₹1,500</span>
+                                <span class="discount">20% off</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <span class="product-badge">New</span>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1608751807259-3bda10e5043f?ixlib=rb-4.0.3" alt="Bamboo Chair">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Furniture</span>
+                            <a href="#" class="product-title">Handcrafted Bamboo Chair</a>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(35)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹3,500</span>
+                                <span class="original-price">₹4,200</span>
+                                <span class="discount">17% off</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1586023492120-9ae6a0136c27?ixlib=rb-4.0.3" alt="Bamboo Lamp">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Home Decor</span>
+                            <a href="#" class="product-title">Bamboo Table Lamp</a>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(19)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹1,800</span>
+                                <span class="original-price">₹2,250</span>
+                                <span class="discount">20% off</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1623948405095-ecbefcae7082?ixlib=rb-4.0.3" alt="Bamboo Blinds">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Home Decor</span>
+                            <a href="#" class="product-title">Bamboo Window Blinds</a>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(27)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹2,200</span>
+                                <span class="original-price">₹2,750</span>
+                                <span class="discount">20% off</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <span class="product-badge">Best Seller</span>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1633944097898-c5753db2a635?ixlib=rb-4.0.3" alt="Bamboo Flooring">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Construction Material</span>
+                            <a href="#" class="product-title">Bamboo Flooring Tiles</a>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(56)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹950/sq.ft</span>
+                                <span class="original-price">₹1,200/sq.ft</span>
+                                <span class="discount">21% off</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="wishlist"><i class="far fa-heart"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1541753236785-bb4c7d4be5f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJhbWJvb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bamboo Panels">
-                    </div>
-                    <div class="product-card-content">
-                        <h3 class="product-card-title">Bamboo Wall Panels</h3>
-                        <div class="product-card-price">₹3,450.00</div>
-                        <p class="product-card-desc">Eco-friendly bamboo panels perfect for interior wall covering and decoration.</p>
-                        <div class="product-card-actions">
-                            <a href="#" class="btn btn-outline">Details</a>
-                            <a href="#" class="btn">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <span class="product-badge">New</span>
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1597041723388-53b606a0cf93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJhbWJvbyUyMGZsb29yaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=80" alt="Bamboo Flooring">
-                    </div>
-                    <div class="product-card-content">
-                        <h3 class="product-card-title">Bamboo Flooring Tiles</h3>
-                        <div class="product-card-price">₹4,800.00</div>
-                        <p class="product-card-desc">Durable and stylish bamboo flooring tiles for a sustainable home.</p>
-                        <div class="product-card-actions">
-                            <a href="#" class="btn btn-outline">Details</a>
-                            <a href="#" class="btn">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1605294570722-4c532f511b46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGJhbWJvb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bamboo Fencing">
-                    </div>
-                    <div class="product-card-content">
-                        <h3 class="product-card-title">Bamboo Fencing Rolls</h3>
-                        <div class="product-card-price">₹2,300.00</div>
-                        <p class="product-card-desc">Natural bamboo fencing for privacy screens and garden borders.</p>
-                        <div class="product-card-actions">
-                            <a href="#" class="btn btn-outline">Details</a>
-                            <a href="#" class="btn">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 5 -->
-                <div class="product-card">
-                    <span class="product-badge">Eco-Friendly</span>
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1593006434467-a48d4f88b428?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGJhbWJvb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bamboo Beams">
-                    </div>
-                    <div class="product-card-content">
-                        <h3 class="product-card-title">Structural Bamboo Beams</h3>
-                        <div class="product-card-price">₹6,750.00</div>
-                        <p class="product-card-desc">Strong structural bamboo beams for eco-friendly construction projects.</p>
-                        <div class="product-card-actions">
-                            <a href="#" class="btn btn-outline">Details</a>
-                            <a href="#" class="btn">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 6 -->
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1590410291593-6dcd9c24cde5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGJhbWJvb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bamboo Matting">
-                    </div>
-                    <div class="product-card-content">
-                        <h3 class="product-card-title">Bamboo Matting Rolls</h3>
-                        <div class="product-card-price">₹1,850.00</div>
-                        <p class="product-card-desc">Versatile bamboo matting for various DIY and construction applications.</p>
-                        <div class="product-card-actions">
-                            <a href="#" class="btn btn-outline">Details</a>
-                            <a href="#" class="btn">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Additional products would be added here to reach 45 -->
-                <!-- For brevity, I'm showing 6 products but the layout would accommodate 45 -->
             </div>
             
             <!-- Pagination -->
@@ -889,48 +1038,46 @@
                 <li><a href="#" class="active">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
                 <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
             </ul>
         </div>
     </section>
 
-    <!-- Product Page Footer -->
-    <footer class="product-footer">
+    <!-- Footer -->
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h3>GreenBamboo Homes</h3>
-                    <p style="margin-bottom: 20px;">Building sustainable futures with eco-friendly construction since 2010.</p>
+                    <h3>Dilip Bhai Thatched Roof</h3>
+                    <p style="margin-bottom: 20px;">Building sustainable futures with eco-friendly bamboo construction since 2010.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/share/1LKbW2ewzs/"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%80%E0%A4%AA-%E0%A4%AD%E0%A4%BE%E0%A4%88-%E0%A4%9B%E0%A4%AA%E0%A5%8D%E0%A4%AA%E0%A4%B0-%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A4%BE-dilip-sahani-179391376/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/sahani_dil35695"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-col">
-                    <h3>Product Categories</h3>
+                    <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Bamboo Construction Materials</a></li>
-                        <li><a href="#">Eco Lighting Solutions</a></li>
-                        <li><a href="#">Sustainable Furniture</a></li>
-                        <li><a href="#">Renewable Energy Systems</a></li>
-                        <li><a href="#">Water Conservation Products</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Us.html">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3>Customer Support</h3>
+                    <h3>Products</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Shipping Information</a></li>
-                        <li><a href="#">Returns & Exchanges</a></li>
-                        <li><a href="#">Product Care Guides</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">Bamboo Poles</a></li>
+                        <li><a href="#">Fencing Panels</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Home Decor</a></li>
+                        <li><a href="#">All Products</a></li>
                     </ul>
                 </div>
                 
@@ -938,15 +1085,15 @@
                     <h3>Contact Us</h3>
                     <ul class="contact-info">
                         <li><i class="fas fa-map-marker-alt"></i> 123 Eco Park, Bamboo Road, Bali, Indonesia</li>
-                        <li><i class="fas fa-phone"></i> +9211264607</li>
-                        <li><i class="fas fa-envelope"></i> dilipbhaichaparwala@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> 9211264607</li>
+                        <li><i class="fas fa-envelope"></i> info@dilipbhaithatchedroof.com</li>
                         <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 GreenBamboo Homes. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #f44336;"></i> for a sustainable future</p>
+                <p>&copy; 2023 Dilip Bhai Thatched Roof. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #f44336;"></i> for a sustainable future</p>
             </div>
         </div>
     </footer>
@@ -986,42 +1133,43 @@
             header.classList.toggle('sticky', window.scrollY > 100);
         });
         
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        // Add to cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const product = this.closest('.product-card');
+                const title = product.querySelector('.product-title').textContent;
+                
+                this.innerHTML = 'Added to Cart <i class="fas fa-check"></i>';
+                this.style.background = 'var(--secondary)';
+                
+                setTimeout(() => {
+                    this.innerHTML = 'Add to Cart';
+                    this.style.background = 'var(--primary)';
+                }, 2000);
+                
+                // In a real implementation, you would add the product to a cart system
+                console.log(`Added ${title} to cart`);
             });
         });
         
-        // Filter functionality
-        const filterOptions = document.querySelectorAll('.filter-options input');
-        filterOptions.forEach(option => {
-            option.addEventListener('change', filterProducts);
-        });
-        
-        function filterProducts() {
-            // This function would filter products based on selected filters
-            // In a real implementation, this would show/hide products based on criteria
-            console.log('Filtering products...');
-        }
-        
-        // Pagination functionality
-        const paginationLinks = document.querySelectorAll('.pagination a');
-        paginationLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                paginationLinks.forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-                // In a real implementation, this would load the appropriate page of products
-                console.log('Loading page: ' + this.textContent);
+        // Wishlist functionality
+        document.querySelectorAll('.wishlist').forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    this.style.color = '#f44336';
+                    this.style.background = '#ffebee';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    this.style.color = '';
+                    this.style.background = '';
+                }
             });
         });
-        
-        // Generate more products (in a real implementation, this would come from a database)
-        // For demonstration, we're just showing 6 products, but the layout is ready for 45
     </script>
 </body>
 </html>
